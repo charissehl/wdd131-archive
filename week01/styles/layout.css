@@ -28,7 +28,7 @@ body {
 h1 {
     font-family: var(--heading-font);
     font-size: 3rem;
-    line-height: 1.1em;
+    line-height: 1em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -45,12 +45,14 @@ h3 {
     font-size: 1.6em;
     letter-spacing: 0.05em;
     font-weight: 550;
+    line-height: 2.2em;
 }
 
 p {
     font-family: var(--paragraph-font);
-    font-size: 1.1em;
+    font-size: 1.2em;
     line-height: 1.6em;
+    padding: 1.2em 0;
 }
 
 header {
@@ -108,7 +110,7 @@ aside {
     color: var(--secondary-color);
     grid-column: 3 / 4;
     grid-row: 2 / 2;
-    padding: 2rem;
+    padding: 3rem;
 }
 
 footer {
