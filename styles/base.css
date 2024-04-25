@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS variables */
+:root {
+    --heading-font: Hind, display;
+    --paragraph-font: Urbanist, sans-serif;
+
+    --primary-color: #051923;
+    --secondary-color: #f4f1df;
+    --accent1-color: #e07a5f;
+    --accent2-color: #3d405b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--primary-color);
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 233px 1fr 70px;
+    grid-template-columns: 1fr;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--primary-color);
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 1em;
+    padding-bottom: 0.1em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.3em;
+    color: var(--accent2-color);
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2.5em;
+    padding-bottom: 0.4em;
+}
+
+h3 {
+    font-size: 1.6em;
+    letter-spacing: 0.05em;
+    font-weight: 550;
+    line-height: 2.2em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0.9em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--heading-font);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    font-size: 1.2em;
+    line-height: 1.6em;
+    padding-bottom: 0.7rem;
+    padding-left: 4em;
+    padding-right: 2.5em;
+}
+
+header {
+    background-color: var(--accent1-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    grid-row: 1;
+}
+
+header h2 {
+    color: var(--secondary-color);
+    font-size: 2.3em;
+    font-weight: 500;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    color: var(--secondary-color);
+    padding: 0.35rem;
+    font-family: var(--paragraph-font);
+    font-size: 1.3em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    color: var(--accent1-color);
+}
+
+main {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--secondary-color);
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+footer {
+    background-color: var(--primary-color);
+    grid-row: 3;
+    text-align: center;
+    margin-bottom: 1em;
+    padding-top: 1.2em;
+}
+
+footer p {
+    color: var(--secondary-color);
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+.card {
+    padding-left: 0;
+}
+
+.card h2 {
+    padding-top: 0.8em;
+}
+
+.profile {
+    grid-column: 2;
+    grid-row: 1;
+    margin-bottom: 1.5em;
+}
+
+.profile-img {
+    width: 250px;
+    height: auto;
+    float: right;
+    margin-left: 1.8em;
+}
+
+.resources {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    grid-column: 1;
+    grid-row: 1;
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.resources ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 1.8em;
+}
+
+.resources a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.3em;
+    line-height: 2.5em;
+}
+
+.resources a:hover {
+    color: var(--primary-color);
+}
+
+.resources h3 {
+    position: absolute;
+    top: 260px;
+    left: 148px;
+}
+
+.location {
+    margin-top: 1.7em;
+}
+
+.location h3 {
+    background-color: var(--accent1-color);
+    padding: 0.3em 0 0;
+    color: var(--secondary-color);
+}
+
+.location img {
+    width: 100%;
+    height: auto;
+}
+
+.location p {
+    padding-top: 0.5em;
+}
+
+#medium {
+    color: var(--accent1-color);
+    font-weight: 600;
+    font-size: 1.1em;
+}
