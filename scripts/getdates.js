@@ -22,6 +22,6 @@ const formatDate = new Intl.DateTimeFormat(
 const formatTime = `${padWithZero(today.getHours())}:${padWithZero(today.getMinutes())}:${padWithZero(today.getSeconds())}`;
 
 // medium and year content
-medium.innerHTML = `Last modified: <span class="last-mod">${formatDate}, ${formatTime}</span>`;
+medium.innerHTML = `Last modified: ${formatDate}, ${formatTime}`;
 year.innerHTML = `©${today.getFullYear()} 🐾 Charisse Hearns-Lemon 🐾 Auckland NZ`;
 
