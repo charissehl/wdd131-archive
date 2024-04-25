@@ -201,10 +201,19 @@ footer p {
     color: var(--primary-color);
 }
 
-.resources h3 {
+.resources h2 {
+    color: var(--secondary-color);
+    font-size: 1.6em;
+    letter-spacing: 0.05em;
+    font-weight: 550;
+    line-height: 2.2em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0.9em;
     position: absolute;
     top: 260px;
-    left: 148px;
+    left: 98px;
+
 }
 
 .location {
