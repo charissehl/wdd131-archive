@@ -102,10 +102,12 @@ footer {
 
 #menu::before {
     content: url('images/burger-bar.png');
+    position: fixed;
 }
 
 #menu.open::before {
     content: url('images/close-button.png');
+    position: fixed;
 }
 
 .navigation {
