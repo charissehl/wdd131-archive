@@ -1,0 +1,96 @@
+/* temples-large.css */
+
+@media (min-width: 47em) {
+
+    header {
+        width: 100vw;
+        max-width: 1500px;
+        margin: 0 auto;
+        height: 170px;
+        padding-top: 15px;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2.3rem;
+        text-align: center;
+    }
+
+    /* navigation menu */
+    #menu {
+        display: none;
+        /* hide burger bar */
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0.5em;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+        font-size: 1.8em;
+        font-weight: 380;
+        letter-spacing: 0.07em;
+    }
+
+    #active {
+        float: left;
+        line-height: 1em;
+        padding-top: 14px;
+        font-weight: 550;
+        font-size: 1.5em;
+    }
+
+    #active:first-letter {
+        font-size: 1.2em;
+    }
+
+    /* main content */
+    main {
+        width: 100vw;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    .gallery {
+        width: 70vw;
+        max-width: 1200px;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .gallery figure {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .gallery img {
+        max-width: 300px;
+        max-height: 350px;
+        padding-top: 1.5em;
+    }
+
+    .gallery figcaption {
+        background-color: var(--secondary-color);
+        color: var(--accent2-color);
+        font-size: 1.15em;
+        text-align: center;
+        line-height: 1.2em;
+        padding: 0.8em;
+    }
+
+    footer {
+        width: 100vw;
+        max-width: 1500px;
+    }
+}
