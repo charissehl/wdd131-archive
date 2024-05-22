@@ -101,11 +101,11 @@ footer {
 }
 
 #menu::before {
-    content: url('/images/burger-bar.png');
+    content: url('images/burger-bar.png');
 }
 
 #menu.open::before {
-    content: url('/images/close-button.png');
+    content: url('images/close-button.png');
 }
 
 .navigation {
