@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 W03 Assignment: </title>
+    <meta name="description" content="WDD 131 W03 assignment">
+    <meta name="author" content="Charisse Hearns-Lemon">
+    <link href="styles/place.css" rel="stylesheet">
+    <link href="styles/place-lg.css" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julee&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>New Zealand</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-img-lg.webp" media="(min-width: 800px)">
+                <source srcset="images/hero-img-med.webp" media="(min-width: 500px)">
+                <img src="images/hero-img-sml.webp" alt="New Zealand Pūkeko underneath a fern." width="1255" height="837">
+            </picture>
+        </section>
+
+        <article class="data-container" id="data">
+            <h2>Data</h2>
+            <p>Area</p>
+            <p>268,021 km²</p>
+            <p>Population</p>
+            <p>5,360,930</p>
+            <p>Capital</p>
+            <p>Wellington</p>
+            <p>Official Languages</p>
+            <p>English, Māori, <br>NZ Sign Language</p>
+            <p>Time Zone</p>
+            <p>UTC+12 NZST<br>
+                UTC+13 NZDT <i>(Summer)</i></p>
+            <p>Calling Code</p>
+            <p>+64</p>
+        </article>
+
+        <article class="weather-container" id="weather">
+            <h2>Weather</h2>
+            <img src="images/weather-emoticon.svg" alt="Rain and sun weather emoticon.">
+            <p>Temperature</p>
+            <p><span id="temperature-display"></span>°C</p>
+            <p>Conditions</p>
+            <p>Cloudy with showers</p>
+            <p>Wind Speed</p>
+            <p><span id="wind-speed-display"></span>km/h</p>
+            <p>Wind Chill</p>
+            <p id="result">°C</p>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <p id="year">
+        <p id="medium"></p>
+    </footer>
+
+</body>
+
+</html>
